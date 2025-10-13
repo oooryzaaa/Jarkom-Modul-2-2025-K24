@@ -59,3 +59,6 @@ valmar     IN  A  192.223.3.4
 lindon     IN  A  192.223.3.5
 vingilot   IN  A  192.223.3.6
 
+ping -c 3 tirion.k24.com
+ping -c 3 valmar.k24.com
+ping -c 3 eonwe.k24.com
