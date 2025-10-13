@@ -19,10 +19,6 @@ iface eth3 inet static
     address 192.223.3.1
     netmask 255.255.255.0
 
-auto eth4
-iface eth4 inet static
-    address 192.223.4.1
-    netmask 255.255.255.0
 
 ## switch 1
 # Earendil
@@ -73,27 +69,27 @@ iface eth0 inet static
 # Tirion
 auto eth0
 iface eth0 inet static
-    address 192.223.3.2
+    address 192.223.3.3
     netmask 255.255.255.0
     gateway 192.223.3.1
 
 # Valmar
 auto eth0
 iface eth0 inet static
-    address 192.223.4.3
+    address 192.223.3.4
     netmask 255.255.255.0
-    gateway 192.223.4.1
+    gateway 192.223.3.1
 
 # Lindon
 auto eth0
 iface eth0 inet static
-    address 192.223.4.4
+    address 192.223.3.5
     netmask 255.255.255.0
-    gateway 192.223.4.1
+    gateway 192.223.3.1
 
 # Vingilot
 auto eth0
 iface eth0 inet static
-    address 192.223.4.5
+    address 192.223.3.6
     netmask 255.255.255.0
-    gateway 192.223.4.1
+    gateway 192.223.3.1
