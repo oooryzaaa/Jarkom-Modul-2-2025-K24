@@ -1,0 +1,27 @@
+# di tirion isi dengan record
+$TTL 604800
+@     IN   SOA   ns1.k24.com. root.k24.com. (
+            2025101302 ; Serial
+            604800     ; Refresh
+            86400      ; Retry
+            2419200    ; Expire
+            604800 )   ; Negative Cache TTL
+;
+@     IN   NS   ns1.k24.com.
+@     IN   NS   ns2.k24.com.
+
+; A Records
+ns1     IN   A    192.223.3.3   ; Tirion
+ns2     IN   A    192.223.3.4   ; Valmar
+sirion  IN   A    192.223.3.2
+lindon  IN   A    192.223.3.5
+vingilot IN  A    192.223.3.6
+
+; CNAME Records
+www     IN   CNAME sirion
+static  IN   CNAME lindon
+app     IN   CNAME vingilot
+
+# cek serial SOA di tirion dan valmar
+dig @192.223.3.3 k24.com SOA
+dig @192.223.3.4 k24.com SOA
