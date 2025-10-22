@@ -1,6 +1,7 @@
 # Jarkom-Modul-2-2025-K24
 
 ## 1. pembuatan topologi 
+penetapan alamat IP dan default gateway untuk setiap host berdasarkan pembagian jalur: Barat, Timur, dan DMZ, dengan Eonwe bertindak sebagai router sentral (default gateway) untuk semua jalur internal.
 ![alt text](/image/image_1.png)
 
 ## 2. 
@@ -160,6 +161,7 @@ server {
 ##Uji dari client (cirdan):
 `curl http://static.k24.com/annals/`
 # 10.
+
 
 
 
